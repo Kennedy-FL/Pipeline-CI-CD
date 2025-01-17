@@ -1,0 +1,11 @@
+name: Push Template Basic # nome
+run-name: Running - ${{github.event_name}}
+on: [push] # trigger, coloquei a push
+
+jobs: # para configurar os jobs
+  on-push: # o nome do job
+    runs-on: ubuntu-latest # a imagem que irá rodar o teste
+    steps: # os passos do teste
+      - name: Comentário # nome
+        run: | # o que será executado, no caso, só irá imprimir a frase "Comentário do workflow PUSH"
+          echo "Comentário do workflow PUSH"
