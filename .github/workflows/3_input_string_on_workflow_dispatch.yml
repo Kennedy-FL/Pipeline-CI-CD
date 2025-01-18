@@ -4,7 +4,7 @@ on:
     workflow_dispatch:
         inputs:
             browser:
-                description: Selecione qualquer coisa
+                description: Selecione o Browser
                 type: string
 jobs: 
   on-workflow_dispatch: 
