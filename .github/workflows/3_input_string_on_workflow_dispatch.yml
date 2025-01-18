@@ -3,7 +3,7 @@ run-name: Running - ${{github.event_name}}
 on:
     workflow_dispatch:
         inputs:
-            browser:
+            qualquer-coisa:
                 description: Selecione o Browser
                 type: string
 jobs: 
@@ -12,4 +12,4 @@ jobs:
     steps: 
       - name: Comentário 
         run: | 
-          echo "Comentário do workflow dispatch - ${{inputs.browser}}"
+          echo "Comentário do workflow dispatch - ${{inputs.qualquer-coisa}}"
