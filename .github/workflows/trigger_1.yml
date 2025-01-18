@@ -1,10 +1,10 @@
 name: GitHub Actions - Trigger 1
 run-name: Running - Trigger 1
-on: [push, workflow_dispatch]
+on: [push]
 jobs: 
     on-push:
-        runs-on: ubuntu-lastend
-        steps:
-            - name: Comentário
-            run: |
-                echo "Trigger finalizado"
+        runs-on: ubuntu-latest 
+        steps: 
+          - name: Comentário 
+            run: | 
+              echo "Trigger finalizado"
