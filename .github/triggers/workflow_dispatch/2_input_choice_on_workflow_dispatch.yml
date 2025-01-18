@@ -1,3 +1,4 @@
+name: Github Actions - Workflow_dispatch
 run-name: Running - ${{github.event_name}}
 on:
     workflow_dispatch:
